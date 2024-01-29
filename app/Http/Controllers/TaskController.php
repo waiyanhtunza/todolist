@@ -10,7 +10,7 @@ class TaskController extends Controller
     public function store()
     {
         $valid = request()->validate([
-            'task' => 'required'
+            'task' => 'required|min:5|max:50'
         ]);
 
         Task::create($valid);
@@ -23,5 +23,13 @@ class TaskController extends Controller
     {
         $task->delete();
         return back()->with('success','Your Deleting task is successful');
+    }
+
+    public function show(Task $task)
+    {
+        
+        return view('action.detail',[
+            'task' => $task,
+        ]);
     }
 }
