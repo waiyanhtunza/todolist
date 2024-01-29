@@ -32,4 +32,11 @@ class TaskController extends Controller
             'task' => $task,
         ]);
     }
+
+    public function edit(Task $task)
+    {
+        return view('action.update',[
+            'task'=>$task
+        ]);
+    }
 }

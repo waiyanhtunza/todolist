@@ -23,4 +23,8 @@ Route::delete('/tasks/{task}',[TaskController::class,'destroy'])->name('tasks.de
 
 Route::post('/tasks/{task}',[TaskController::class,'show'])->name('tasks.show');
 
+Route::post('/tasks/{task}/edit',[TaskController::class,'edit'])->name('tasks.edit');
+
+Route::put('/tasks/{task}',[TaskController::class,'update'])->name('tasks.update');
+
 
