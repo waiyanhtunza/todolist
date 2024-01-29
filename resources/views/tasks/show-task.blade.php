@@ -1,4 +1,4 @@
-@foreach ($tasks as $task)
+
     <div class="flex  w-full my-10">
         <div class=" flex items-center w-2/3  ml-10 rounded-md cursor-pointer hover:bg-gray-900">
             <label class="flex items-center cursor-pointer " for="task_10">
@@ -16,7 +16,5 @@
         <div class=" flex items-end justify-end w-1/3">
             @include('tasks.action')
         </div>
-
-
     </div>
-@endforeach
+

@@ -12,7 +12,7 @@ class HomeController extends Controller
 
 
         return view('home',[
-            'tasks' => Task::orderBy('created_at','desc')->get(),
+            'tasks' => Task::orderBy('created_at','desc')->paginate(8),
         ]);
     }
 }
