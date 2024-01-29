@@ -30,7 +30,7 @@
                             </p>
 
                             <div class="flex justify-end mt-5 mr-5">
-                                <a href="{{route('home')}}" class="btn btn-dark ">Close</a>
+                                <a href="{{ route('home') }}" class="btn btn-dark ">Close</a>
                             </div>
                         </div>
 
