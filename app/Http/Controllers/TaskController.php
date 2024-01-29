@@ -18,4 +18,10 @@ class TaskController extends Controller
         return back()->with('add','Your Task Adding Succeful');
 
     }
+
+    public function destroy(Task $task)
+    {
+        $task->delete();
+        return back();
+    }
 }
