@@ -22,6 +22,6 @@ class TaskController extends Controller
     public function destroy(Task $task)
     {
         $task->delete();
-        return back();
+        return back()->with('success','Your Deleting task is successful');
     }
 }
